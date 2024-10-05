@@ -6,12 +6,7 @@ const returnUrl = urlParams.get('returnUrl');
 
 const messageElement = document.getElementById('message');
 const timerElement = document.getElementById('timer');
-
-// Function to play beep sound
-const playBeep = () => {
-    const beep = new Audio('beep.mp3'); // Ensure you have a beep.mp3 file in your project
-    beep.play();
-};
+const beepSound = document.getElementById('beepSound');
 
 // Function to start the timer
 const startTimer = (duration, message, callback) => {
@@ -21,7 +16,7 @@ const startTimer = (duration, message, callback) => {
         timerElement.innerText = time;
         if (time < 5) {
             document.body.style.backgroundColor = 'red';
-            playBeep();
+            beepSound.play();
         } else {
             document.body.style.backgroundColor = '';
         }
