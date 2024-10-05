@@ -1,0 +1,12 @@
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+.time {
+    font-size: 5em;
+    font-weight: bold;
+}
