@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const startSeconds = parseInt(urlParams.get('seconds'), 10);
+let startSeconds = parseInt(urlParams.get('seconds'), 10);
 
 const countdown = () => {
     if (startSeconds <= 0) {
